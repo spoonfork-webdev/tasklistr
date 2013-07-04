@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+	<name>COM_TASKLISTR</name>
+	<creationDate>2013-06-13</creationDate>
+	<author>Jasonry25</author>
+	<authorEmail>admin@joomla.com</authorEmail>
+	<authorUrl>http://github.com/magnuswebdev</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>1.1.0</version>
+	<description>COM_TASKLISTR_DESCRIPTION</description>
+
+	<install>
+  		<sql>
+    		<file charset="utf8" driver="mysql">install.mysql.sql</file>
+  		</sql>
+	</install>
+
+	<files folder="site">
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>languages</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+		<folder>views</folder>
+		<filename>index.html</filename>
+		<filename>tasklistr.php</filename>
+	</files> 
+
+	<languages folder="site">
+		<language tag="en-GB">languages/en-GB/en-GB.com_tasklistr.ini</language>
+	</languages>
+
+	<administration>
+		<menu link="option=com_tasklist">COM_TASKLISTR</menu>
+
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>languages</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<filename>tasklistr.php</filename>
+			<filename>index.html</filename>
+			<filename>install.mysql.sql</filename>
+		</files>  
+
+		<languages folder="admin">
+			<language tag="en-GB">languages/en-GB/en-GB.com_tasklistr.ini</language>
+			<language tag="en-GB">languages/en-GB/en-GB.com_tasklistr.sys.ini</language>
+		</languages>
+
+	</administration>
+
+</extension>
